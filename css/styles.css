@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for emoji cards */
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of emoji cards */
+    gap: 20px; /* Spacing between cards */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+/* Individual emoji card */
+.emoji {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensures even spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Emoji icon */
+.icon {
+    font-size: 4rem; /* Larger size for the emoji */
+    margin-bottom: 1rem; /* Adds spacing below the emoji */
+}
+
+/* Title inside each card */
+.emoji h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+/* Description inside each card */
+.emoji p {
+    margin: 1rem 0;
+    color: #555;
+    flex-grow: 1; /* Makes sure the content takes up available space */
+}
+
+/* Button styling */
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    margin-top: auto; /* Button sticks to the bottom of the card */
+}
+
+/* Button hover effect */
+.emoji a:hover {
+    background-color: #5e1480;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .emojis {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
