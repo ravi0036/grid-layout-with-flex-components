@@ -11,8 +11,9 @@ body {
 }
 
 .emoji {
-  margin: 0;
-  border-buttom: 2px solid #ccc;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 .emoji h2 {
